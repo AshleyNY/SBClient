@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9526b386-e9df-4d3c-b6e8-30567faa4c47}</ProjectGuid>
+    <RootNamespace>SBClient</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;SBCLIENT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;SBCLIENT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;SBCLIENT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;SBCLIENT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Client\Client.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Libs\Imgui\imgui.cpp" />
+    <ClCompile Include="Libs\Imgui\imgui_demo.cpp" />
+    <ClCompile Include="Libs\Imgui\imgui_draw.cpp" />
+    <ClCompile Include="Libs\Imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Libs\Imgui\imgui_impl_dx12.cpp" />
+    <ClCompile Include="Libs\Imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Libs\Imgui\imgui_tables.cpp" />
+    <ClCompile Include="Libs\Imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Libs\Kiero\kiero.cpp" />
+    <ClCompile Include="SDK\Components\ActorRotationComponent.h" />
+    <ClCompile Include="SDK\GameData.cpp" />
+    <ClCompile Include="SDK\Hook\HookManager.cpp" />
+    <ClCompile Include="SDK\Hook\Hooks\ImGuiHook\ImGuiHook.cpp" />
+    <ClCompile Include="SDK\Hook\Hooks\ImGuiHook\ImGuiHook.h" />
+    <ClCompile Include="SDK\Hook\Hooks\Input\KeyMouseHook.h" />
+    <ClCompile Include="SDK\MCTextFormat.cpp" />
+    <ClCompile Include="SDK\Signatures.cpp" />
+    <ClCompile Include="Utils\Logger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Client\Client.h" />
+    <ClInclude Include="Libs\entt\entt\config\config.h" />
+    <ClInclude Include="Libs\entt\entt\config\macro.h" />
+    <ClInclude Include="Libs\entt\entt\config\version.h" />
+    <ClInclude Include="Libs\entt\entt\container\dense_map.hpp" />
+    <ClInclude Include="Libs\entt\entt\container\dense_set.hpp" />
+    <ClInclude Include="Libs\entt\entt\container\fwd.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\algorithm.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\any.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\attribute.h" />
+    <ClInclude Include="Libs\entt\entt\core\compressed_pair.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\enum.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\family.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\fwd.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\hashed_string.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\ident.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\iterator.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\memory.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\monostate.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\tuple.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\type_info.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\type_traits.hpp" />
+    <ClInclude Include="Libs\entt\entt\core\utility.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\component.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\entity.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\fwd.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\group.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\handle.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\helper.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\mixin.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\observer.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\organizer.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\registry.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\runtime_view.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\snapshot.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\sparse_set.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\storage.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\table.hpp" />
+    <ClInclude Include="Libs\entt\entt\entity\view.hpp" />
+    <ClInclude Include="Libs\entt\entt\entt.hpp" />
+    <ClInclude Include="Libs\entt\entt\fwd.hpp" />
+    <ClInclude Include="Libs\entt\entt\graph\adjacency_matrix.hpp" />
+    <ClInclude Include="Libs\entt\entt\graph\dot.hpp" />
+    <ClInclude Include="Libs\entt\entt\graph\flow.hpp" />
+    <ClInclude Include="Libs\entt\entt\graph\fwd.hpp" />
+    <ClInclude Include="Libs\entt\entt\locator\locator.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\adl_pointer.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\container.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\context.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\factory.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\fwd.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\meta.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\node.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\pointer.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\policy.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\range.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\resolve.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\template.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\type_traits.hpp" />
+    <ClInclude Include="Libs\entt\entt\meta\utility.hpp" />
+    <ClInclude Include="Libs\entt\entt\platform\android-ndk-r17.hpp" />
+    <ClInclude Include="Libs\entt\entt\poly\fwd.hpp" />
+    <ClInclude Include="Libs\entt\entt\poly\poly.hpp" />
+    <ClInclude Include="Libs\entt\entt\process\fwd.hpp" />
+    <ClInclude Include="Libs\entt\entt\process\process.hpp" />
+    <ClInclude Include="Libs\entt\entt\process\scheduler.hpp" />
+    <ClInclude Include="Libs\entt\entt\resource\cache.hpp" />
+    <ClInclude Include="Libs\entt\entt\resource\fwd.hpp" />
+    <ClInclude Include="Libs\entt\entt\resource\loader.hpp" />
+    <ClInclude Include="Libs\entt\entt\resource\resource.hpp" />
+    <ClInclude Include="Libs\entt\entt\signal\delegate.hpp" />
+    <ClInclude Include="Libs\entt\entt\signal\dispatcher.hpp" />
+    <ClInclude Include="Libs\entt\entt\signal\emitter.hpp" />
+    <ClInclude Include="Libs\entt\entt\signal\fwd.hpp" />
+    <ClInclude Include="Libs\entt\entt\signal\sigh.hpp" />
+    <ClInclude Include="Libs\Imgui\imconfig.h" />
+    <ClInclude Include="Libs\Imgui\imgui.h" />
+    <ClInclude Include="Libs\Imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="Libs\Imgui\imgui_impl_dx12.h" />
+    <ClInclude Include="Libs\Imgui\imgui_impl_win32.h" />
+    <ClInclude Include="Libs\Imgui\imgui_internal.h" />
+    <ClInclude Include="Libs\Imgui\imstb_rectpack.h" />
+    <ClInclude Include="Libs\Imgui\imstb_textedit.h" />
+    <ClInclude Include="Libs\Imgui\imstb_truetype.h" />
+    <ClInclude Include="Libs\Kiero\kiero.h" />
+    <ClInclude Include="Libs\Libhat\libhat.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\access.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\Callable.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\CompileTime.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\concepts.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\c\libhat.h" />
+    <ClInclude Include="Libs\Libhat\libhat\defines.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\FixedString.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\MemoryProtector.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\process.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\result.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\scanner.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\signature.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\StringLiteral.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\system.hpp" />
+    <ClInclude Include="Libs\Libhat\libhat\Traits.hpp" />
+    <ClInclude Include="Libs\MinHook\MinHook.h" />
+    <ClInclude Include="Libs\MinHook\MinHook\MinHook.h" />
+    <ClInclude Include="SDK\Components\AABBShapeComponent.h" />
+    <ClInclude Include="SDK\Components\ActorEquipmentComponent.h" />
+    <ClInclude Include="SDK\Components\ActorHeadRotationComponent.h" />
+    <ClInclude Include="SDK\Components\ActorTypeComponent.h" />
+    <ClInclude Include="SDK\Components\MobBodyRotation.h" />
+    <ClInclude Include="SDK\Components\RenderPositionComponent.h" />
+    <ClInclude Include="SDK\Components\RuntimeIDComponent.h" />
+    <ClInclude Include="SDK\Components\StateVectorComponent.h" />
+    <ClInclude Include="SDK\Core\ClientInstance.h" />
+    <ClInclude Include="SDK\Core\GuiData.h" />
+    <ClInclude Include="SDK\Core\mce.h" />
+    <ClInclude Include="SDK\Core\Minecraft.h" />
+    <ClInclude Include="SDK\Core\MinecraftGame.h" />
+    <ClInclude Include="SDK\GameData.h" />
+    <ClInclude Include="SDK\Global.h" />
+    <ClInclude Include="SDK\Hook\HookManager.h" />
+    <ClInclude Include="SDK\Hook\Hooks\Actor\IsInWaterHook.h" />
+    <ClInclude Include="SDK\Hook\Hooks\Actor\IsOnGroundHook.h" />
+    <ClInclude Include="SDK\Hook\Hooks\Input\KeyMapHook.h" />
+    <ClInclude Include="SDK\Hook\Hooks\Player\ActorNormalTickHook.h" />
+    <ClInclude Include="SDK\Hook\Hooks\Render\LevelRenderHook.h" />
+    <ClInclude Include="SDK\Hook\Hooks\Render\SetUpAndRenderHook.h" />
+    <ClInclude Include="SDK\MCTextFormat.h" />
+    <ClInclude Include="SDK\Render\Font.h" />
+    <ClInclude Include="SDK\Render\LevelRender.h" />
+    <ClInclude Include="SDK\Render\LevelRenderPlayer.h" />
+    <ClInclude Include="SDK\Render\MinecraftUIRenderContext.h" />
+    <ClInclude Include="SDK\Render\ScreenContext.h" />
+    <ClInclude Include="SDK\Render\ScreenView.h" />
+    <ClInclude Include="SDK\Render\Tessellator.h" />
+    <ClInclude Include="SDK\Render\TextMeasureData.h" />
+    <ClInclude Include="SDK\Render\UILayer.h" />
+    <ClInclude Include="SDK\Signatures.h" />
+    <ClInclude Include="SDK\World\Actor.h" />
+    <ClInclude Include="SDK\World\EntityContext.h" />
+    <ClInclude Include="SDK\World\EntityId.h" />
+    <ClInclude Include="SDK\World\EntityIdTraits.h" />
+    <ClInclude Include="SDK\World\Inventory\Container.h" />
+    <ClInclude Include="SDK\World\Inventory\SimpleContainer.h" />
+    <ClInclude Include="SDK\World\Level.h\Level.h" />
+    <ClInclude Include="SDK\World\LocalPlayer.h" />
+    <ClInclude Include="SDK\World\Mob.h" />
+    <ClInclude Include="SDK\World\Player.h" />
+    <ClInclude Include="Utils\ColorUtils.h" />
+    <ClInclude Include="Utils\Logger.h" />
+    <ClInclude Include="Utils\Math.h" />
+    <ClInclude Include="Utils\MemoryUtils.h" />
+    <ClInclude Include="Utils\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libs\Libhat\libhat.lib" />
+    <Library Include="Libs\MinHook\MinHook.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

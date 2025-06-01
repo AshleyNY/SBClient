@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Logger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Client.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Signatures.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Hook\HookManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Hook\Hooks\Input\KeyMouseHook.h">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\GameData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\MCTextFormat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Components\ActorRotationComponent.h">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\Imgui\imgui.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\Imgui\imgui_demo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\Imgui\imgui_draw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\Imgui\imgui_impl_dx11.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\Imgui\imgui_impl_dx12.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\Imgui\imgui_impl_win32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\Imgui\imgui_tables.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\Imgui\imgui_widgets.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\Kiero\kiero.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Hook\Hooks\ImGuiHook\ImGuiHook.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Hook\Hooks\ImGuiHook\ImGuiHook.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Libs\Libhat\libhat\c\libhat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\access.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\Callable.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\CompileTime.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\concepts.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\defines.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\FixedString.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\MemoryProtector.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\process.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\result.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\scanner.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\signature.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\StringLiteral.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\system.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat\Traits.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Libhat\libhat.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\MinHook\MinHook\MinHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\MinHook\MinHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Logger.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Global.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Hook\Hooks\Input\KeyMapHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\MemoryUtils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Client.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Signatures.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Hook\HookManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Core\ClientInstance.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Core\MinecraftGame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Core\GuiData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Core\Minecraft.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Math.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Hook\Hooks\Render\SetUpAndRenderHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Render\MinecraftUIRenderContext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Render\ScreenContext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Render\ScreenView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Render\Tessellator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Render\TextMeasureData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Render\Font.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Core\mce.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ColorUtils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\GameData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\MCTextFormat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Render\UILayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Render\LevelRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Render\LevelRenderPlayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\World\LocalPlayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Hook\Hooks\Render\LevelRenderHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\World\Player.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\World\Mob.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\World\Actor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Components\AABBShapeComponent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Components\ActorHeadRotationComponent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Components\ActorTypeComponent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Components\MobBodyRotation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Components\RenderPositionComponent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Components\RuntimeIDComponent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Components\StateVectorComponent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\World\Level.h\Level.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\World\EntityContext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\config\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\config\macro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\config\version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\container\dense_map.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\container\dense_set.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\container\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\algorithm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\any.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\attribute.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\compressed_pair.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\enum.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\family.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\hashed_string.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\ident.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\iterator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\memory.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\monostate.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\tuple.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\type_info.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\type_traits.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\core\utility.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\component.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\entity.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\group.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\handle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\helper.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\mixin.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\observer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\organizer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\registry.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\runtime_view.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\snapshot.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\sparse_set.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\storage.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\table.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entity\view.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\graph\adjacency_matrix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\graph\dot.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\graph\flow.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\graph\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\locator\locator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\adl_pointer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\container.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\context.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\factory.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\meta.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\node.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\pointer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\range.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\resolve.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\template.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\type_traits.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\meta\utility.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\platform\android-ndk-r17.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\poly\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\poly\poly.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\process\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\process\process.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\process\scheduler.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\resource\cache.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\resource\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\resource\loader.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\resource\resource.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\signal\delegate.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\signal\dispatcher.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\signal\emitter.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\signal\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\signal\sigh.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\entt.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\entt\entt\fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\World\EntityId.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\World\EntityIdTraits.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Hook\Hooks\Actor\IsInWaterHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Hook\Hooks\Actor\IsOnGroundHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Components\ActorEquipmentComponent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\World\Inventory\Container.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\World\Inventory\SimpleContainer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Hook\Hooks\Player\ActorNormalTickHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Imgui\imconfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Imgui\imgui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Imgui\imgui_impl_dx11.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Imgui\imgui_impl_dx12.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Imgui\imgui_impl_win32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Imgui\imgui_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Imgui\imstb_rectpack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Imgui\imstb_textedit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Imgui\imstb_truetype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Kiero\kiero.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libs\MinHook\MinHook.lib" />
+    <Library Include="Libs\Libhat\libhat.lib" />
+  </ItemGroup>
+</Project>
